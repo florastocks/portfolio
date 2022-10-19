@@ -1,0 +1,15 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#navbar-collapse {
+  justify-content: end;
+}
+#navbar-collapse a {
+  padding-left: 10px;
+}/*# sourceMappingURL=main.css.map */
