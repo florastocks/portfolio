@@ -12,7 +12,7 @@ const PageNavbar = () => {
           <Nav.Link as={Link} to='/about'>About Me</Nav.Link>
           <Nav.Link as={Link} to='/projects'>My Projects</Nav.Link>
           <Nav.Link as={Link} to='/skills'>Skills</Nav.Link>
-          <Nav.Link as={Link} to='/contact'>About Me</Nav.Link>
+          <Nav.Link as={Link} to='/contact'> Contact Me</Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

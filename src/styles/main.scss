@@ -1,5 +1,5 @@
 //! Variables ----
-$shaddow-default: 0px 2px 10px rgb(0 0 0 / 20%);
+$shaddow-default: 0px 4px 10px rgb(0 0 0 / 30%);
 $burnt-orange: #ab4e07;
 $dark-pink: #b5026d;
 $teal: #047478;
@@ -14,10 +14,23 @@ $off-white: #f2f2eb;
   margin: 0px;
   box-shadow: 0px 2px 10px rgb(0 0 0 / 20%);
 }
+.navbar{
+  box-shadow: $shaddow-default;
+}
 
 #navbar-collapse{
   justify-content: end;
   a{
     padding-left: 10px;
+  }
+}
+
+// ---- Contact page ----
+.btn-contact{
+  border: none;
+  border-radius: 100%;
+  background-color: none;
+  .round-img{
+    height: 3rem;
   }
 }
