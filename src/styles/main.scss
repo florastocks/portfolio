@@ -2,7 +2,7 @@
 $shaddow-default: 0px 4px 10px rgb(0 0 0 / 30%);
 $burnt-orange: #ab4e07;
 $dark-pink: #b5026d;
-$teal: #047478;
+$teal: #b9d4d5;
 $off-white: #f2f2eb;
 
 // ---- Navbar -----
@@ -26,15 +26,13 @@ $off-white: #f2f2eb;
 }
 
 // ---- Contact page ----
-.btn-contact{
-  border: none;
-  border-radius: 100%;
-  background: none;
-  .round-img{
-    height: 3rem;
-  }
+.site-wrapper{
+  background-color: $off-white;
 }
-
+.page-wrapper{
+  // background-color: $off-white;
+  height: 90vh;
+}
 .page-heading{
   justify-content: center;
   display: flex;
@@ -46,11 +44,29 @@ $off-white: #f2f2eb;
   flex-direction: row;
   justify-content: center;
   .card{
-    width: 30vw;
-    margin: 5px;
+    width: 25vw;
+    height: fit-content;
+    margin: 10px;
+    box-shadow: 0.9rem 0.9rem rgb(205, 79, 25);
+    .email-card{
+      box-shadow: 0.9rem 0.9rem rgb(200 10 78);
+    }
     .card-body{
+      .card-title{
+        font-size: 1.5rem;
+      }
       display: flex;
+      justify-content: space-evenly;
       flex-direction: column;
+      align-items: center;
+      .btn-contact{
+        border: none;
+        border-radius: 100%;
+        background: none;
+        .round-img{
+          height: 3rem;
+        }
+      }
     }
   }
 }
