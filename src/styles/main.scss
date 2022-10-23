@@ -29,8 +29,28 @@ $off-white: #f2f2eb;
 .btn-contact{
   border: none;
   border-radius: 100%;
-  background-color: none;
+  background: none;
   .round-img{
     height: 3rem;
+  }
+}
+
+.page-heading{
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cards-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .card{
+    width: 30vw;
+    margin: 5px;
+    .card-body{
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

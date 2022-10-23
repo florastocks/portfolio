@@ -21,8 +21,29 @@
 .btn-contact {
   border: none;
   border-radius: 100%;
-  background-color: none;
+  background: none;
 }
 .btn-contact .round-img {
   height: 3rem;
+}
+
+.page-heading {
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cards-wrapper .card {
+  width: 30vw;
+  margin: 5px;
+}
+.cards-wrapper .card .card-body {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
