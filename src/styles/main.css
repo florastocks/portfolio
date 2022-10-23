@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #navbar-collapse {
@@ -16,6 +16,10 @@
 }
 #navbar-collapse a {
   padding-left: 10px;
+}
+
+.page-heading, .cards-wrapper, .card-body {
+  display: flex;
 }
 
 .site-wrapper {
@@ -28,29 +32,20 @@
 
 .page-heading {
   justify-content: center;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0 30px 0;
 }
 
 .cards-wrapper {
-  display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .cards-wrapper .card {
-  width: 25vw;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 10px;
-  box-shadow: 0.9rem 0.9rem rgb(205, 79, 25);
-}
-.cards-wrapper .card .email-card {
-  box-shadow: 0.9rem 0.9rem rgb(200, 10, 78);
+  width: 300px;
+  height: 300px;
+  margin: 0 20px 0 20px;
+  border-radius: 50%;
 }
 .cards-wrapper .card .card-body {
-  display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
@@ -60,9 +55,20 @@
 }
 .cards-wrapper .card .card-body .btn-contact {
   border: none;
-  border-radius: 100%;
   background: none;
 }
 .cards-wrapper .card .card-body .btn-contact .round-img {
   height: 3rem;
+}
+.cards-wrapper .card .card-body .btn-contact .round-img:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+#email-card {
+  box-shadow: 0.9rem 0.9rem rgb(200, 10, 78);
+}
+
+#LinkedIn-card, #GitHub-card {
+  box-shadow: 0.9rem 0.9rem rgb(205, 79, 25);
 }/*# sourceMappingURL=main.css.map */

@@ -1,5 +1,5 @@
 //! Variables ----
-$shaddow-default: 0px 4px 10px rgb(0 0 0 / 30%);
+$shaddow-default: 0px 4px 10px rgb(0 0 0 / 50%);
 $burnt-orange: #ab4e07;
 $dark-pink: #b5026d;
 $teal: #b9d4d5;
@@ -25,48 +25,58 @@ $off-white: #f2f2eb;
   }
 }
 
-// ---- Contact page ----
+// ---- Contact page ---- 
+  //! --- display flex ---
+.page-heading, .cards-wrapper, .card-body{
+  display: flex;
+}
 .site-wrapper{
   background-color: $off-white;
 }
 .page-wrapper{
-  // background-color: $off-white;
   height: 90vh;
 }
 .page-heading{
   justify-content: center;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 0 30px 0;
 }
 .cards-wrapper{
-  display: flex;
   flex-direction: row;
   justify-content: center;
   .card{
-    width: 25vw;
-    height: fit-content;
-    margin: 10px;
-    box-shadow: 0.9rem 0.9rem rgb(205, 79, 25);
-    .email-card{
-      box-shadow: 0.9rem 0.9rem rgb(200 10 78);
-    }
+    width: 300px;
+    height: 300px;
+    margin: 0 20px 0 20px;
+    border-radius: 50%;
     .card-body{
       .card-title{
         font-size: 1.5rem;
       }
-      display: flex;
       justify-content: space-evenly;
       flex-direction: column;
       align-items: center;
       .btn-contact{
         border: none;
-        border-radius: 100%;
         background: none;
         .round-img{
           height: 3rem;
         }
+        .round-img:hover{
+          box-shadow: $shaddow-default;
+          border-radius: 50%;
+        }
       }
     }
   }
+}
+// --- Card hover ---
+.card:hover{
+  
+}
+// ----- Contact card Id's ------
+#email-card{
+  box-shadow: 0.9rem 0.9rem rgb(200 10 78);
+}
+#LinkedIn-card, #GitHub-card{
+  box-shadow: 0.9rem 0.9rem rgb(205, 79, 25);
 }
