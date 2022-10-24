@@ -6,6 +6,42 @@ $teal: #b9d4d5;
 $off-white: #f2f2eb;
 $font-main: 'Jura', sans-serif;
 $text-shaddow: 0.3rem 0rem;
+
+//! ---- Shared styles ------
+
+.site-wrapper{
+  background-color: $off-white;
+  height: 100vh;
+  letter-spacing: 0.1rem;
+}
+.card{
+  width: 300px;
+  height: 300px;
+  margin: 30px 20px 0 20px;
+  border-radius: 50%;
+}
+.link{
+  text-decoration: none !important;
+  font-weight: 600;
+  color: $burnt-orange;
+}
+
+.page-heading, .cards-wrapper, .card-body{
+  display: flex;
+}
+.page-wrapper{
+  height: 90vh;
+}
+.page-heading{
+  justify-content: center;
+  margin: 50px 0 30px 0;
+  font-family: $font-main;
+  font-weight: 500;
+  // text-shadow: $text-shaddow rgb(200, 10, 78);
+  letter-spacing: 0.8rem;
+  text-shadow: rgba(213, 88, 5, 0.657) 3px 0px;
+}
+
 // ----- Navbar -------
 .brand{
   font-family: $font-main;
@@ -35,7 +71,6 @@ $text-shaddow: 0.3rem 0rem;
   }
 }
 
-
 // ---- Navbar -----
 .navbar-container{
   display: flex;
@@ -56,27 +91,16 @@ $text-shaddow: 0.3rem 0rem;
     padding-left: 10px;
   }
 }
+// ----- Projects Page -----
+.project-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 // ---- Contact page ---- 
   //! --- display flex ---
-.page-heading, .cards-wrapper, .card-body{
-  display: flex;
-}
-.site-wrapper{
-  background-color: $off-white;
-  height: 100vh;
-}
-.page-wrapper{
-  height: 90vh;
-}
-.page-heading{
-  justify-content: center;
-  margin: 50px 0 30px 0;
-  font-family: $font-main;
-  font-weight: 600;
-  text-shadow: $text-shaddow rgb(200, 10, 78);
-  letter-spacing: 1rem;
-}
+
 .cards-wrapper{
   flex-direction: row;
   justify-content: center;
