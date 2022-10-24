@@ -6,16 +6,7 @@ import GitHubImg from '../images/GitHubImg.png'
 
 const Contact = () => {
 
-  // function Mailto(email) {
-  //   return (
-  //     <a href={`mailto:${email}`}></a>
-  //   );
-  // }
-  
-  // ReactDOM.render(
-  //   <Mailto email="stocksflora@gmail.com"></Mailto>,
-  //   document.getElementById("root")
-  // );
+
   return (
       <>
         <section className='page-wrapper'>

@@ -1,3 +1,30 @@
+.brand {
+  font-family: "Jura", sans-serif;
+  font-weight: 600;
+  color: rgb(205, 79, 25) !important;
+  text-shadow: 0.3rem 0rem rgb(200, 10, 78);
+  letter-spacing: 0.2rem;
+  font-size: 3rem !important;
+  padding: 0px !important;
+}
+
+.homepage-welcome {
+  margin: 20% 0 0 7%;
+  font-family: "Jura", sans-serif;
+}
+.homepage-welcome h1 {
+  font-weight: 600;
+  color: rgb(205, 79, 25);
+  letter-spacing: 1rem;
+  text-shadow: 0.3rem 0rem rgb(200, 10, 78);
+  font-size: 3rem;
+}
+.homepage-welcome h4 {
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -9,6 +36,7 @@
 
 .navbar {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 0 !important;
 }
 
 #navbar-collapse {
@@ -24,6 +52,7 @@
 
 .site-wrapper {
   background-color: #f2f2eb;
+  height: 100vh;
 }
 
 .page-wrapper {
@@ -35,7 +64,7 @@
   margin: 50px 0 30px 0;
   font-family: "Jura", sans-serif;
   font-weight: 600;
-  text-shadow: 0.3rem 0.1rem rgb(161, 19, 83);
+  text-shadow: 0.3rem 0rem rgb(200, 10, 78);
   letter-spacing: 1rem;
 }
 
@@ -53,9 +82,14 @@
   justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
+  font-family: "Jura", sans-serif;
+  font-weight: 300;
 }
 .cards-wrapper .card .card-body .card-title {
   font-size: 1.5rem;
+  font-family: "Jura", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
 }
 .cards-wrapper .card .card-body .btn-contact {
   border: none;
@@ -67,6 +101,10 @@
 .cards-wrapper .card .card-body .btn-contact .round-img:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 #email-card {

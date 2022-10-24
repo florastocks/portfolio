@@ -1,10 +1,41 @@
 //! Variables ----
 $shaddow-default: 0px 4px 10px rgb(0 0 0 / 50%);
-$burnt-orange: #ab4e07;
-$dark-pink: #b5026d;
+$burnt-orange: rgb(205, 79, 25);
+$dark-pink: rgb(200, 10, 78);
 $teal: #b9d4d5;
 $off-white: #f2f2eb;
 $font-main: 'Jura', sans-serif;
+$text-shaddow: 0.3rem 0rem;
+// ----- Navbar -------
+.brand{
+  font-family: $font-main;
+  font-weight: 600;
+  color: $burnt-orange !important;
+  text-shadow: 0.3rem 0rem $dark-pink;
+  letter-spacing: 0.2rem;
+  font-size: 3rem !important;
+  padding: 0px !important;
+}
+
+// ---- Home Page ------
+.homepage-welcome{
+  margin: 20% 0 0 7%;
+  font-family: $font-main;
+  h1{
+    font-weight: 600;
+    color: $burnt-orange;
+    letter-spacing: 1rem;
+    text-shadow: $text-shaddow $dark-pink;
+    font-size: 3rem;
+  }
+  h4{
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+
 // ---- Navbar -----
 .navbar-container{
   display: flex;
@@ -16,6 +47,7 @@ $font-main: 'Jura', sans-serif;
 }
 .navbar{
   box-shadow: $shaddow-default;
+  padding: 0 !important;
 }
 
 #navbar-collapse{
@@ -32,6 +64,7 @@ $font-main: 'Jura', sans-serif;
 }
 .site-wrapper{
   background-color: $off-white;
+  height: 100vh;
 }
 .page-wrapper{
   height: 90vh;
@@ -41,7 +74,7 @@ $font-main: 'Jura', sans-serif;
   margin: 50px 0 30px 0;
   font-family: $font-main;
   font-weight: 600;
-  text-shadow: 0.3rem 0.1rem rgb(161, 19, 83);
+  text-shadow: $text-shaddow rgb(200, 10, 78);
   letter-spacing: 1rem;
 }
 .cards-wrapper{
@@ -55,10 +88,15 @@ $font-main: 'Jura', sans-serif;
     .card-body{
       .card-title{
         font-size: 1.5rem;
+        font-family: $font-main;
+        font-weight: 400;
+        letter-spacing: 0.2rem;
       }
       justify-content: space-evenly;
       flex-direction: column;
       align-items: center;
+      font-family: $font-main;
+      font-weight: 300;
       .btn-contact{
         border: none;
         background: none;
@@ -75,12 +113,12 @@ $font-main: 'Jura', sans-serif;
 }
 // --- Card hover ---
 .card:hover{
-
+  transform: scale(1.1);
 }
 // ----- Contact card Id's ------
 #email-card{
   box-shadow: 0.9rem 0.9rem rgb(200 10 78);
 }
 #LinkedIn-card, #GitHub-card{
-  box-shadow: 0.9rem 0.9rem rgb(205, 79, 25);
+  box-shadow: 0.9rem 0.9rem $burnt-orange;
 }
