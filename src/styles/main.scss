@@ -114,8 +114,13 @@ $text-shaddow: 0.3rem 0rem;
   align-items: center;
 }
 .proj-card{
-  display: flex; 
-  flex-direction: row;
+  display: flex;
+  flex-direction: row !important;
+  width: 50vw;
+  height: 30vh !important;
+  .card-vid{
+    width: 100%;
+  }
 }
 
 // ---- Contact page ---- 

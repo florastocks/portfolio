@@ -108,7 +108,12 @@
 
 .proj-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
+  width: 50vw;
+  height: 30vh !important;
+}
+.proj-card .card-vid {
+  width: 100%;
 }
 
 .cards-wrapper {

@@ -1,4 +1,4 @@
-import { Col } from "react-bootstrap"
+import { Card, Col } from "react-bootstrap"
 
 import Spaceinvaders from '../images/spaceinvaders.gif'
 import EarthBnB from '../images/EarthBnB.gif'
@@ -43,15 +43,15 @@ const Projects = () => {
     <h1 className='page-heading'>Projects page</h1>
     <div className="project-cards">
       {projects.map((project, index) => (
-        <div id={index} className="proj-card card">
-          <Col>
-            <div className="card-title">{project.title}</div>
-            <div className="card-body">{project.description}</div>
-          </Col>
-          <Col >
-            <video className='card-vid' width='200' height='100' autoplay><source src={project.src} autoplay type='video/mp4'></source></video>
-          </Col>
-        </div>
+          <Card id={index} className="proj-card">
+            <Col>
+              <div className="card-title">{project.title}</div>
+              <div className="card-body">{project.description}</div>
+            </Col>
+            <Col >
+            <video className='card-vid' autoplay><source src={project.src} autoplay type='video/mp4'></source></video>
+            </Col>
+          </Card>
       ))}
     </div>
     </>
