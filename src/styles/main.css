@@ -95,7 +95,7 @@
   justify-content: end;
 }
 #navbar-collapse a {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .project-cards {
@@ -104,6 +104,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+.proj-card {
+  display: flex;
+  flex-direction: row;
 }
 
 .cards-wrapper {
