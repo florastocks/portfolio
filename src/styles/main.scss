@@ -55,7 +55,7 @@ $text-shaddow: 0.3rem 0rem;
 
 // ---- Home Page ------
 .homepage-welcome{
-  margin: 12% 0% 0 10%;
+  margin: 12% 0 0 12%;
   font-family: $font-main;
   align-items: center;
   h1{
@@ -161,4 +161,15 @@ $text-shaddow: 0.3rem 0rem;
 }
 #LinkedIn-card, #GitHub-card{
   box-shadow: 0.9rem 0.9rem $burnt-orange;
+}
+
+// ---- skills ----
+.skills-wrapper{
+  display: flex;
+}
+.skill-card{
+  height: 10px;
+}
+.skill-img{
+  height: 5rem;
 }

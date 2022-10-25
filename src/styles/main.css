@@ -46,7 +46,7 @@
 }
 
 .homepage-welcome {
-  margin: 12% 0% 0 10%;
+  margin: 12% 0 0 12%;
   font-family: "Jura", sans-serif;
   align-items: center;
 }
@@ -151,4 +151,16 @@
 
 #LinkedIn-card, #GitHub-card {
   box-shadow: 0.9rem 0.9rem rgb(205, 79, 25);
+}
+
+.skills-wrapper {
+  display: flex;
+}
+
+.skill-card {
+  height: 10px;
+}
+
+.skill-img {
+  height: 5rem;
 }/*# sourceMappingURL=main.css.map */
