@@ -49,7 +49,7 @@ const Projects = () => {
               <div className="card-body">{project.description}</div>
             </Col>
             <Col >
-            <video className='card-vid' autoplay><source src={project.src} autoplay type='video/mp4'></source></video>
+            <video autoPlay muted playsInline loop className='card-vid'><source src={project.src} type='video/mp4'></source></video>
             </Col>
           </Card>
       ))}
