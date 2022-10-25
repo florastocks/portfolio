@@ -7,7 +7,7 @@ import Express from '../skills/express.png'
 import PostgreSQL from '../skills/PostgreSQL.svg'
 import Node_js from '../skills/node.png'
 import Bootstrap from '../skills/bootstrap.png'
-import Django from '../skills/django.jpg'
+import Django from '../skills/django.png'
 import MongoDb from '../skills/mongoDB.png'
 import Mongoose from '../skills/mongoose.png'
 import SASS from '../skills/Sass.png'
@@ -18,7 +18,7 @@ import JWT from '../skills/jwt.png'
 import Netlify from '../skills/netlify.png'
 import TablePlus from '../skills/tableplus.png'
 import Excalidraw from '../skills/excalidraw.png'
-import Trello from '../skills/Trello.jpg'
+import Trello from '../skills/trello.png'
 import Slack from '../skills/slack.png'
 import npm from '../skills/npm.png'
 import VScode from '../skills/VSCode.png'
@@ -135,7 +135,7 @@ const Skills = () => {
       <div className='skills-wrapper'>
         {skills.map(skill => (
           <div className="skill-card">
-          <div className="card-body"><img className='skill-img' src={skill.src} alt={skill.label}/></div>
+          <div className="card-body"><img className='skill-img' title={skill.label} src={skill.src} alt={skill.label}/></div>
         </div>
         ))}
       </div>

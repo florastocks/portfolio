@@ -154,11 +154,19 @@
 }
 
 .skills-wrapper {
+  width: 60vw;
+  height: 60vh;
   display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
 }
-
-.skill-card {
-  height: 10px;
+.skills-wrapper .skill-card {
+  margin: 2%;
+}
+.skills-wrapper .skill-card:hover {
+  transform: scale(1.03);
 }
 
 .skill-img {

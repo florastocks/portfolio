@@ -165,11 +165,21 @@ $text-shaddow: 0.3rem 0rem;
 
 // ---- skills ----
 .skills-wrapper{
+  width: 60vw;
+  height: 60vh;
   display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  .skill-card{
+    margin: 2%;
+  }
+  .skill-card:hover{
+    transform: scale(1.03);
+  }
 }
-.skill-card{
-  height: 10px;
-}
+
 .skill-img{
   height: 5rem;
 }
