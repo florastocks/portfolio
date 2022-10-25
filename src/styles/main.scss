@@ -14,12 +14,16 @@ $text-shaddow: 0.3rem 0rem;
   min-height: 100vh;
   height: 100%;
   letter-spacing: 0.1rem;
+  font-family: $font-main;
 }
 .card{
   width: 300px;
   height: 300px;
   margin: 30px 20px 0 20px;
   border-radius: 50%;
+}
+.card-title{
+      text-align: center;
 }
 .link{
   text-decoration: none !important;
@@ -120,6 +124,7 @@ $text-shaddow: 0.3rem 0rem;
   height: 30vh !important;
   .card-vid{
     width: 100%;
+    margin-top: 2.5vh;
   }
 }
 
