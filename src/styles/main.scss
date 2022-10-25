@@ -26,7 +26,6 @@ $text-shaddow: 0.3rem 0rem;
   font-weight: 600;
   color: $burnt-orange;
 }
-
 .page-heading, .cards-wrapper, .card-body, .homepage-welcome, .homePhoto{
   display: flex;
 }
@@ -65,6 +64,9 @@ $text-shaddow: 0.3rem 0rem;
     letter-spacing: 1rem;
     text-shadow: $text-shaddow $dark-pink;
     font-size: 3rem;
+  }
+  h1:hover{
+    transform: scale(1.02);
   }
   h4{
     font-weight: 400;
