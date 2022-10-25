@@ -11,7 +11,8 @@ $text-shaddow: 0.3rem 0rem;
 
 .site-wrapper{
   background-color: $off-white;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   letter-spacing: 0.1rem;
 }
 .card{
@@ -26,7 +27,7 @@ $text-shaddow: 0.3rem 0rem;
   color: $burnt-orange;
 }
 
-.page-heading, .cards-wrapper, .card-body{
+.page-heading, .cards-wrapper, .card-body, .homepage-welcome, .homePhoto{
   display: flex;
 }
 .page-wrapper{
@@ -55,8 +56,9 @@ $text-shaddow: 0.3rem 0rem;
 
 // ---- Home Page ------
 .homepage-welcome{
-  margin: 20% 0 0 7%;
+  margin: 12% 0% 0 10%;
   font-family: $font-main;
+  align-items: center;
   h1{
     font-weight: 600;
     color: $burnt-orange;
@@ -69,6 +71,16 @@ $text-shaddow: 0.3rem 0rem;
     letter-spacing: 0.2rem;
     font-size: 1.2rem;
   }
+  .me-home{
+    height: 25rem;
+    border-radius: 50%;
+    box-shadow: -5rem -3rem $burnt-orange, 5rem 3rem $dark-pink;
+  }
+}
+.homePhoto{
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
 }
 
 // ---- Navbar -----
@@ -96,6 +108,8 @@ $text-shaddow: 0.3rem 0rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 // ---- Contact page ---- 

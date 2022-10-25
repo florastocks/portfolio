@@ -1,10 +1,19 @@
+import Me from '../images/Me.png'
+import { Col } from 'react-bootstrap'
+
+
 
 const Home = () => {
   return (
     <div className="homepage-welcome">
-      <h4>Hello, my name is</h4>
-      <h1>Flora Stocks</h1>
-      <h4>Junior Software Engineer / Web Developer</h4>
+      <Col className='md-6'>
+        <h4>Hello, my name is</h4>
+        <h1>Flora Stocks</h1>
+        <h4>Junior Software Engineer / Web Developer</h4>
+      </Col>
+      <Col classNamw='homePhoto'>
+        <img  className='me-home' src={Me} alt='Flora'/>
+      </Col>
     </div>
   )
 }

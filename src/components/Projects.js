@@ -1,3 +1,6 @@
+import { Col } from "react-bootstrap"
+
+import homePageImg from '../images/homepage.png'
 
 const Projects = () => {
 
@@ -28,7 +31,7 @@ const Projects = () => {
       description: "A solo Full-Stack application. Users can view different recipes, write, update, and delete reviews.",
       deployLink: "https://recipe-app-by-flora.herokuapp.com/",
       GitHubLinke: 'https://github.com/florastocks/recipe_book',
-      imageSrc: 'Recipe-img',
+      imageSrc: homePageImg,
     }
   ]
 
@@ -38,8 +41,13 @@ const Projects = () => {
     <div className="project-cards">
       {projects.map((project, index) => (
         <div id={index} className="card">
-          <div className="card-title">{project.title}</div>
-          <div className="card-body">{project.description}</div>
+          <Col className='md-6'>
+            <div className="card-title">{project.title}</div>
+            <div className="card-body">{project.description}</div>
+          </Col>
+          <Col className="md-6">
+            <div className='card-image'>{project.imageSrc}</div>
+          </Col>
         </div>
       ))}
     </div>

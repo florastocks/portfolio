@@ -1,6 +1,7 @@
 .site-wrapper {
   background-color: #f2f2eb;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   letter-spacing: 0.1rem;
 }
 
@@ -17,7 +18,7 @@
   color: rgb(205, 79, 25);
 }
 
-.page-heading, .cards-wrapper, .card-body {
+.page-heading, .cards-wrapper, .card-body, .homepage-welcome, .homePhoto {
   display: flex;
 }
 
@@ -45,8 +46,9 @@
 }
 
 .homepage-welcome {
-  margin: 20% 0 0 7%;
+  margin: 12% 0% 0 10%;
   font-family: "Jura", sans-serif;
+  align-items: center;
 }
 .homepage-welcome h1 {
   font-weight: 600;
@@ -59,6 +61,17 @@
   font-weight: 400;
   letter-spacing: 0.2rem;
   font-size: 1.2rem;
+}
+.homepage-welcome .me-home {
+  height: 25rem;
+  border-radius: 50%;
+  box-shadow: -5rem -3rem rgb(205, 79, 25), 5rem 3rem rgb(200, 10, 78);
+}
+
+.homePhoto {
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
 }
 
 .navbar-container {
@@ -86,6 +99,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cards-wrapper {
