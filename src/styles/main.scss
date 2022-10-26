@@ -23,14 +23,14 @@ $text-shaddow: 0.3rem 0rem;
   border-radius: 50%;
 }
 .card-title{
-      text-align: center;
+  text-align: center;
 }
 .link{
   text-decoration: none !important;
   font-weight: 600;
   color: $burnt-orange;
 }
-.page-heading, .cards-wrapper, .card-body, .homepage-welcome, .homePhoto{
+.page-heading, .cards-wrapper, .card-body, .homepage-welcome, .homePhoto, .button-container{
   display: flex;
 }
 .page-wrapper{
@@ -122,9 +122,29 @@ $text-shaddow: 0.3rem 0rem;
   flex-direction: row !important;
   width: 50vw;
   height: 30vh !important;
+  .card-title{
+    margin-top: 1vh;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
   .card-vid{
     width: 100%;
     margin-top: 2.5vh;
+  }
+  .button-container{
+    justify-content: center;
+  }
+  .btn-project{
+    border: none;
+    background: none;
+    .link-img{
+      height: 5vh;
+      box-shadow: $shaddow-default;
+      border-radius: 50%;
+    }
+  }
+  .btn-project:hover{
+    transform: scale(1.1);
   }
 }
 
@@ -160,15 +180,14 @@ $text-shaddow: 0.3rem 0rem;
         .round-img:hover{
           box-shadow: $shaddow-default;
           border-radius: 50%;
+          transform: scale(1.1);
         }
       }
     }
   }
 }
 // --- Card hover ---
-.card:hover{
-  transform: scale(1.1);
-}
+
 // ----- Contact card Id's ------
 #email-card{
   box-shadow: 0.9rem 0.9rem rgb(200 10 78);

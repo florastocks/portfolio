@@ -4,36 +4,38 @@ import Spaceinvaders from '../images/spaceinvaders.gif'
 import EarthBnB from '../images/EarthBnB.gif'
 import HarryPotter from '../images/harrypotter.gif'
 import Recipe from '../images/Recipe.gif'
+import Link from '../images/link.png'
+import GitHub from '../images/GitHubImg.png'
 
 const Projects = () => {
 
   const projects = [
     {
-      title: 'SpaceInvaders app',
+      title: 'SpaceInvaders',
       description: "An underwater spin on the classic 80's arcade game Space Invaders.",
       deployLink: "https://florastocks.github.io/spaceinvaders-p1/",
-      GitHubLinke: 'https://github.com/florastocks/spaceinvaders-p1',
+      GitHubLink: 'https://github.com/florastocks/spaceinvaders-p1',
       src: Spaceinvaders,
     },
     {
-      title: 'Harry Potter Characters App',
+      title: 'Harry Potter',
       description: "A pair-coded project, creating a Front-End React App and using an external API",
       deployLink: "https://netlify-thinks-florastocks-is-great.netlify.app/allcharacters",
-      GitHubLinke: 'https://github.com/florastocks/harrypotter',
+      GitHubLink: 'https://github.com/florastocks/harrypotter',
       src: HarryPotter,
     },
     {
-      title: 'Earth BnB App',
-      description: "A Full-Stack app, with CRUD functionality on the properties and the user reviews. We created an app where users can search through different kinds of BnB’s, add their own, and review others properties.",
+      title: 'Earth BnB',
+      description: "A Full-Stack app, designed to be in the style of Air BnB, but with an Earthy twist to it.",
       deployLink: "https://project3-earthbnb.netlify.app/",
-      GitHubLinke: 'https://github.com/florastocks/project3-frontend',
+      GitHubLink: 'https://github.com/florastocks/project3-frontend',
       src: EarthBnB,
     },
     {
-      title: 'Recipe App',
+      title: 'Recipe',
       description: "A solo Full-Stack application. Users can view different recipes, write, update, and delete reviews.",
       deployLink: "https://recipe-app-by-flora.herokuapp.com/",
-      GitHubLinke: 'https://github.com/florastocks/recipe_book',
+      GitHubLink: 'https://github.com/florastocks/recipe_book',
       src: Recipe,
     }
   ]
@@ -47,6 +49,10 @@ const Projects = () => {
             <Col>
               <div className="card-title">{project.title}</div>
               <div className="card-body">{project.description}</div>
+              <div className="button-container">
+                <button className="btn-project"><a href={project.deployLink} label="deployment link"><img className='link-img' src={Link} alt='project Link'/></a></button>
+                <button className="btn-project"><a href={project.GitHubLink}><img className='link-img' src={GitHub} alt='project code'/></a></button>
+              </div>
             </Col>
             <Col >
             <video autoPlay muted playsInline loop className='card-vid'><source src={project.src} type='video/mp4'></source></video>

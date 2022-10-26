@@ -23,7 +23,7 @@
   color: rgb(205, 79, 25);
 }
 
-.page-heading, .cards-wrapper, .card-body, .homepage-welcome, .homePhoto {
+.page-heading, .cards-wrapper, .card-body, .homepage-welcome, .homePhoto, .button-container {
   display: flex;
 }
 
@@ -117,9 +117,29 @@
   width: 50vw;
   height: 30vh !important;
 }
+.proj-card .card-title {
+  margin-top: 1vh;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
 .proj-card .card-vid {
   width: 100%;
   margin-top: 2.5vh;
+}
+.proj-card .button-container {
+  justify-content: center;
+}
+.proj-card .btn-project {
+  border: none;
+  background: none;
+}
+.proj-card .btn-project .link-img {
+  height: 5vh;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+.proj-card .btn-project:hover {
+  transform: scale(1.1);
 }
 
 .cards-wrapper {
@@ -155,9 +175,6 @@
 .cards-wrapper .card .card-body .btn-contact .round-img:hover {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
-}
-
-.card:hover {
   transform: scale(1.1);
 }
 
