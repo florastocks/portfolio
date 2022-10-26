@@ -38,7 +38,7 @@ $text-shaddow: 0.3rem 0rem;
 }
 .page-heading{
   justify-content: center;
-  margin: 50px 0 30px 0;
+  margin: 50px 0 15px 0;
   font-family: $font-main;
   font-weight: 500;
   // text-shadow: $text-shaddow rgb(200, 10, 78);
@@ -125,6 +125,12 @@ $text-shaddow: 0.3rem 0rem;
   flex-direction: row !important;
   width: 50vw;
   height: 30vh !important;
+  border-radius: 15px !important;
+  .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
   .card-title{
     margin-top: 1vh;
     font-weight: 600;
@@ -132,10 +138,10 @@ $text-shaddow: 0.3rem 0rem;
   }
   .card-vid{
     width: 100%;
-    margin-top: 2.5vh;
   }
   .button-container{
     justify-content: center;
+    margin-bottom: 3vh;
   }
   .btn-project{
     border: none;
