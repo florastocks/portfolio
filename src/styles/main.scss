@@ -45,6 +45,9 @@ $text-shaddow: 0.3rem 0rem;
   letter-spacing: 0.8rem;
   text-shadow: rgba(213, 88, 5, 0.657) 3px 0px;
 }
+.hide{
+  display: none !important;
+}
 
 // ----- Navbar -------
 .brand{
@@ -208,8 +211,9 @@ $text-shaddow: 0.3rem 0rem;
   .skill-card{
     margin: 2%;
   }
-  .skill-card:hover{
+  .skill-card:hover + .hide{
     transform: scale(1.03);
+    display: block !important;
   }
 }
 

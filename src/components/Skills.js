@@ -1,3 +1,7 @@
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Tooltip from 'react-bootstrap/Tooltip'
+
+
 import JavaScript from '../skills/JS.png'
 import Python from '../skills/python.png'
 import CSS from '../skills/CSS.png'
@@ -134,9 +138,19 @@ const Skills = () => {
       <h1 id='skills-heading' className="page-heading">Skills</h1>
       <div className='skills-wrapper'>
         {skills.map(skill => (
+          <OverlayTrigger
+          key={skill.label}
+          placement='bottom'
+          overlay={
+            <Tooltip id={'tooltip-bottom'}>
+              {skill.label}
+            </Tooltip>
+          }
+        >
           <div className="skill-card">
-          <div className="card-body"><img className='skill-img' title={skill.label} src={skill.src} alt={skill.label}/></div>
-        </div>
+          <div className="card-body"><img className='skill-img' src={skill.src} alt={skill.label}/></div>
+          </div>
+        </OverlayTrigger>
         ))}
       </div>
     </>

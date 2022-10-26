@@ -40,6 +40,10 @@
   text-shadow: rgba(213, 88, 5, 0.657) 3px 0px;
 }
 
+.hide {
+  display: none !important;
+}
+
 .brand {
   font-family: "Jura", sans-serif;
   font-weight: 600;
@@ -198,8 +202,9 @@
 .skills-wrapper .skill-card {
   margin: 2%;
 }
-.skills-wrapper .skill-card:hover {
+.skills-wrapper .skill-card:hover + .hide {
   transform: scale(1.03);
+  display: block !important;
 }
 
 .skill-img {
