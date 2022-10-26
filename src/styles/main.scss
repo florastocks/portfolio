@@ -30,7 +30,8 @@ $text-shaddow: 0.3rem 0rem;
   font-weight: 600;
   color: $burnt-orange;
 }
-.page-heading, .cards-wrapper, .card-body, .homepage-welcome, .homePhoto, .button-container{
+.page-heading, .cards-wrapper, .card-body, .homepage-welcome,
+.homePhoto, .button-container, .about-container, .top-row, .bottom-row{
   display: flex;
 }
 .page-wrapper{
@@ -227,3 +228,54 @@ $text-shaddow: 0.3rem 0rem;
 .skill-img{
   height: 5rem;
 }
+
+//---- about page ----
+.about-container{
+  width: 75vw;
+  flex-direction: row;
+  margin: 0 auto;
+  .interest-container{
+    width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    height: 70vh;
+    .top-row, .bottom-row{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .bottom-row{
+      align-items: flex-start !important;
+    }
+    .interest-div{
+      padding: 2px;
+      max-width: fit-content;
+    }
+  }
+  .interest-img{
+    max-height: 200px;
+    justify-content: center;
+    box-shadow: 0.2rem 0.2rem $burnt-orange, -0.2rem -0.2rem $dark-pink;
+    border-radius: 50%;
+  }
+  .interest-img:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+  }
+  #gav{
+    height: 25vh;
+  }
+  #silver{
+    height: 18vh;
+  }
+  #bella{
+    height: 15vh
+  }
+  #metalcraft{
+    height: 15vh;
+  }
+  }
