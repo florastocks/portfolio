@@ -136,6 +136,7 @@
 .proj-card .btn-project {
   border: none;
   background: none;
+  margin: 5px;
 }
 .proj-card .btn-project .link-img {
   height: 5vh;

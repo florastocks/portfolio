@@ -1,4 +1,6 @@
 import { Card, Col } from "react-bootstrap"
+import OverlayTrigger from "react-bootstrap/OverlayTrigger"
+import Tooltip from "react-bootstrap/Tooltip"
 
 import Spaceinvaders from '../images/spaceinvaders.gif'
 import EarthBnB from '../images/EarthBnB.gif'
@@ -33,7 +35,7 @@ const Projects = () => {
     },
     {
       title: 'Recipe',
-      description: "A solo Full-Stack application. Users can view different recipes, write, update, and delete reviews.",
+      description: "A solo Full-Stack application. Users can view recipes, and CRUD reviews.",
       deployLink: "https://recipe-app-by-flora.herokuapp.com/",
       GitHubLink: 'https://github.com/florastocks/recipe_book',
       src: Recipe,
@@ -50,8 +52,26 @@ const Projects = () => {
               <div className="card-title">{project.title}</div>
               <div className="card-body">{project.description}</div>
               <div className="button-container">
+              <OverlayTrigger
+                placement='bottom'
+                overlay={
+                  <Tooltip id={'tooltip-bottom'}>
+                    Deployed Project
+                  </Tooltip>
+                }
+                >
                 <button className="btn-project"><a href={project.deployLink} label="deployment link"><img className='link-img' src={Link} alt='project Link'/></a></button>
+              </OverlayTrigger>
+              <OverlayTrigger
+                placement='bottom'
+                overlay={
+                  <Tooltip id={'tooltip-bottom'}>
+                    Code & ReadMe
+                  </Tooltip>
+                }
+                >
                 <button className="btn-project"><a href={project.GitHubLink}><img className='link-img' src={GitHub} alt='project code'/></a></button>
+              </OverlayTrigger>
               </div>
             </Col>
             <Col >
