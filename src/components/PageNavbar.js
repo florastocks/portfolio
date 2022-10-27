@@ -9,10 +9,11 @@ const PageNavbar = () => {
       <Container className="navbar-conainer">
         <Navbar.Brand as={Link} to='/' className="brand">FS</Navbar.Brand>
         <Navbar.Collapse id='navbar-collapse'>
-          <Nav.Link as={Link} to='/about'>About Me</Nav.Link>
-          <Nav.Link as={Link} to='/projects'>My Projects</Nav.Link>
-          <Nav.Link as={Link} to='/skills'>Skills</Nav.Link>
-          <Nav.Link as={Link} to='/contact'> Contact Me</Nav.Link>
+          <Nav.Link className="navbarLink" as={Link} to='/'>Home</Nav.Link>
+          <Nav.Link className="navbarLink" as={Link} to='/about'>About Me</Nav.Link>
+          <Nav.Link className="navbarLink" as={Link} to='/projects'>My Projects</Nav.Link>
+          <Nav.Link className="navbarLink" as={Link} to='/skills'>Skills</Nav.Link>
+          <Nav.Link className="navbarLink" as={Link} to='/contact'> Contact Me</Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

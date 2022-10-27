@@ -22,7 +22,7 @@ const Projects = () => {
     {
       title: 'Harry Potter',
       description: "A pair-coded project, creating a Front-End React App and using an external API",
-      deployLink: "https://netlify-thinks-florastocks-is-great.netlify.app/allcharacters",
+      deployLink: "https://netlify-thinks-florastocks-is-great.netlify.app",
       GitHubLink: 'https://github.com/florastocks/harrypotter',
       src: HarryPotter,
     },

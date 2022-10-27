@@ -40,7 +40,7 @@ const About = () => {
       <div className="about-container">
         <Col className="about-para">
         <p>I am a recently trained software engineer who came to coding from an unusual direction – through arts, crafts, and problem solving.
-I have always been creative. I took an Art A level and still draw in my spare time. I have always enjoyed practical problem solving. I am the one at home who fixes things that break – lawnmowers, hoovers, washing machines. And I cannot resist learning and developing new skills. Before coding these included crochet; sewing, dress making – and sports. 
+I have always been creative. I took an Art A level and still draw in my spare time. I have always enjoyed practical problem solving. I am the one at home who fixes things that break – lawnmowers, hoovers, washing machines. I am someone who cannot resist learning and developing new skills. These include crochet; sewing – and sports. 
 
 When I found coding, in an 8 week Python course, these three elements of my character came together and I found a profoundly satisfying activity that I wish to become a career. 
 
