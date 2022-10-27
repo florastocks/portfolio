@@ -31,7 +31,9 @@ $text-shaddow: 0.3rem 0rem;
   color: $burnt-orange;
 }
 .page-heading, .cards-wrapper, .card-body, .homepage-welcome,
-.homePhoto, .button-container, .about-container, .top-row, .bottom-row{
+.homePhoto, .button-container, .about-container, .top-row, 
+.bottom-row, .navbar-container, .project-cards, .proj-card, 
+.skills-wrapper{
   display: flex;
 }
 .page-wrapper{
@@ -95,7 +97,6 @@ $text-shaddow: 0.3rem 0rem;
 
 // ---- Navbar -----
 .navbar-container{
-  display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -118,14 +119,12 @@ $text-shaddow: 0.3rem 0rem;
 }
 // ----- Projects Page -----
 .project-cards{
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 .proj-card{
-  display: flex;
   flex-direction: row !important;
   width: 50vw;
   height: 30vh !important;
@@ -214,7 +213,6 @@ $text-shaddow: 0.3rem 0rem;
 .skills-wrapper{
   width: 60vw;
   height: 60vh;
-  display: flex;
   align-items: stretch;
   flex-wrap: wrap;
   justify-content: space-evenly;
