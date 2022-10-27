@@ -44,7 +44,7 @@ I have always been creative. I took an Art A level and still draw in my spare ti
 
 When I found coding, in an 8 week Python course, these three elements of my character came together and I found a profoundly satisfying activity that I wish to become a career. 
 
-In my 14-week University Summer Holiday (2022), I used 12 of those weeks to enrol in a General Assembly immersive software engineering course. I loved it – it felt more like pursuing a hobby than going to school. We covered everything from basic JavaScript to Full-Stack applications. My love for knowing how all the parts of a thing fit together meant that my final project – a Full Stack website built from scratch gave me an enormous amount pleasure and satisfaction.
+In my 14-week University Summer Holiday (2022), I used 12 of those weeks to enrol in a General Assembly immersive software engineering course. I loved it – it felt more like pursuing a hobby than going to school. We covered everything from basic JavaScript to Full-Stack applications. My love for knowing how all the parts of a thing fit together meant that my final project – a Full Stack website built from scratch gave me an enormous amount of pleasure and satisfaction.
 I do not want to stop now. I wish to continue to learn and develop my skills and am looking for a career in software engineering. It speaks to the key strands in my character, and I know I will love it.
 </p>
         <p>If you wish to know more about me, please contact me <Link to='/contact' className='link'>here.</Link> </p>
