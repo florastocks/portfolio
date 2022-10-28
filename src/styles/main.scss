@@ -16,6 +16,11 @@ $text-shaddow: 0.3rem 0rem;
   .cards-wrapper{
     flex-direction: column;
   }
+  .page-heading{
+    font-size: 1.3rem !important;
+    letter-spacing: 0.8rem !important;
+    text-shadow: rgb(213 88 5 / 66%) 2px 0px !important;
+  }
   .brand{
     font-family: $font-main;
     font-weight: 600;
@@ -120,7 +125,7 @@ $text-shaddow: 0.3rem 0rem;
   display: none !important;
 }
 
-// ----- Navbar -------
+//! ----- Navbar ---------------------------
 .navbar-container{
   height: 7vh;
 }
@@ -145,7 +150,7 @@ $text-shaddow: 0.3rem 0rem;
 //   padding: 0px !important;
 // }
 
-// ---- Home Page ------
+//! ---- Home Page -----------------------------------------------
 .homepage-welcome{
   margin: 12% 0 0 12%;
   font-family: $font-main;
@@ -177,7 +182,7 @@ $text-shaddow: 0.3rem 0rem;
   margin-right: 10%;
 }
 
-// ---- Navbar -----
+//! ---- Navbar -----------------------------------------------
 .navbar-container{
   justify-content: space-between;
   align-items: center;
@@ -198,57 +203,76 @@ $text-shaddow: 0.3rem 0rem;
 .brand:hover, .navbarLink:hover {
   transform: scale(1.1);
 }
-// ----- Projects Page -----
-.project-cards{
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
+//! ----- Projects Page ------------------------------------
 
-// @media only screen and (max-width: 600px){
-//   .proj-card{
-//     flex-direction: column !important;
-//   }
-// }
-.proj-card{
-  flex-direction: row !important;
-  width: 50vw;
-  height: 30vh !important;
-  border-radius: 15px !important;
-  .col{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+@media (max-width: 780px){
+  .project-cards{
+    flex-wrap: nowrap !important;
+    justify-content: center;
+    flex-direction: column !important;
+    align-items: center;
   }
-  .card-title{
-    margin-top: 1vh;
-    font-weight: 600;
-    font-size: 1rem;
+  .proj-card{
+    flex-direction: column !important;
+    margin-bottom: 5px !important;
+    flex-basis: fit-content;
+    margin-top: 0px !important;
+    width: 80vw !important;
   }
   .card-vid{
     width: 100%;
+    border-radius: 5px;
   }
-  .button-container{
+  
+}
+@media (min-width:780px){
+  .project-cards{
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 3vh;
+    flex-direction: column;
+    align-items: center;
   }
-  .btn-project{
-    border: none;
-    background: none;
-    margin: 5px;
-    .link-img{
-      height: 5vh;
-      box-shadow: $shaddow-default;
-      border-radius: 50%;
+  .proj-card{
+    flex-direction: row !important;
+    width: 50vw;
+    height: 30vh !important;
+    border-radius: 15px !important;
+    .col{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    .card-title{
+      margin-top: 1vh;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .card-vid{
+      width: 100%;
     }
   }
-  .btn-project:hover{
-    transform: scale(1.1);
+}
+.button-container{
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+.btn-project{
+  border: none;
+  background: none;
+  margin: 5px;
+  .link-img{
+    height: 5vh;
+    box-shadow: $shaddow-default;
+    border-radius: 50%;
   }
 }
+.btn-project:hover{
+  transform: scale(1.1);
+}
 
-// ---- Contact page ---- 
+
+
+//! ---- Contact page ----------------------------------------
   //! --- display flex ---
 @media only screen and (max-width: 780px){
   .cards-wrapper{
@@ -314,6 +338,12 @@ $text-shaddow: 0.3rem 0rem;
 }
 
 // ---- skills ----
+@media(max-width:780px){
+  .skill-img{
+    height: 3rem !important;
+  }
+}
+  
 .skills-wrapper{
   width: 60vw;
   height: 60vh;
