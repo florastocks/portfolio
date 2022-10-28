@@ -37,13 +37,15 @@ $text-shaddow: 0.3rem 0rem;
   .homepage-welcome{
     flex-direction: column !important;
     align-items: center !important;
-    margin-left: 0px !important;
+    margin-left: 5px !important;
     h1{
       font-size: 1.5rem !important;
       text-shadow: none !important;
+      letter-spacing: 0.2rem !important;
     }
     h4{
       font-size: 1rem !important;
+      letter-spacing: 0.1rem !important;
     }
   }
   .me-home{
