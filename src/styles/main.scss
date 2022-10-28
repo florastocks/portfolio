@@ -12,9 +12,12 @@ $text-shaddow: 0.3rem 0rem;
 @media (max-width: 780px){
   .site-wrapper{
     font-size: 10px;
+    min-height: 100vh fit-content !important;
+
   }
   .cards-wrapper{
     flex-direction: column;
+    background-color: $off-white;
   }
   .page-heading{
     font-size: 1.3rem !important;
@@ -84,7 +87,7 @@ $text-shaddow: 0.3rem 0rem;
 .site-wrapper{
   background-color: $off-white;
   min-height: 100vh;
-  height: 100%;
+  // height: fit-content !important;
   letter-spacing: 0.1rem;
   font-family: $font-main;
 }
@@ -342,6 +345,10 @@ $text-shaddow: 0.3rem 0rem;
   .skill-img{
     height: 3rem !important;
   }
+  .skill-card:after + .hide{
+    transform: scale(1.03);
+    display: block !important;
+  }
 }
   
 .skills-wrapper{
@@ -364,7 +371,29 @@ $text-shaddow: 0.3rem 0rem;
   height: 5rem;
 }
 
-//---- about page ----
+//!---- about page ------------------------
+@media(max-width: 780px) {
+  .about-container{
+    width: 75vw;
+    flex-direction: column !important;
+    margin: 0 auto;
+  }
+  .interest-img{
+    max-height: 100px !important;
+    justify-content: center;
+    box-shadow: 0.2rem 0.2rem $burnt-orange, -0.2rem -0.2rem $dark-pink;
+    border-radius: 50%;
+  }
+  .interest-img:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+  }
+  .interest-container{
+    margin: 0 auto !important;
+  }
+  }
+
+
 .about-container{
   width: 75vw;
   flex-direction: row;
