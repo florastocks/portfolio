@@ -9,7 +9,7 @@ $text-shaddow: 0.3rem 0rem;
 
 //! ---- Shared styles ------
 
-@media (max-width: 600px){
+@media (max-width: 780px){
   .site-wrapper{
     font-size: 10px;
   }
@@ -17,15 +17,33 @@ $text-shaddow: 0.3rem 0rem;
     flex-direction: column;
   }
   .brand{
-    height: 3rem !important;
+    font-family: $font-main;
+    font-weight: 600;
+    color: $burnt-orange !important;
+    text-shadow: 0.3rem 0rem $dark-pink !important;
+    letter-spacing: 0.2rem;
+    padding: 0px !important;
+    // height: 3rem !important;
     font-size: 2rem !important;
   }
   .homepage-welcome{
     flex-direction: column !important;
+    align-items: center !important;
+    margin-left: 0px !important;
+    h1{
+      font-size: 1.5rem !important;
+      text-shadow: none !important;
+    }
+    h4{
+      font-size: 1rem !important;
+    }
   }
   .me-home{
     height: 12rem !important;
-    box-shadow: -2rem -1rem $burnt-orange, 2rem 1rem $dark-pink;
+    margin-top: 10vh !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-shadow: -2rem -1rem $burnt-orange, 2rem 1rem $dark-pink !important;
   }
   .homePhoto{
     margin: 0 auto !important;
@@ -37,6 +55,24 @@ $text-shaddow: 0.3rem 0rem;
   }
   .cards-wrapper{
     flex-direction: column;
+  }
+  .me-home{
+    height: 15rem !important;
+    margin-top: 12vh !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-shadow: -2rem -1rem $burnt-orange, 2rem 1rem $dark-pink !important;
+  }
+  .homepage-welcome{
+    flex-direction: column !important;
+    align-items: center !important;
+    h1{
+      font-size: 1.5rem !important;
+      text-shadow: none !important;
+    }
+    h4{
+      font-size: 1rem !important;
+    }
   }
 }
 
@@ -88,15 +124,26 @@ $text-shaddow: 0.3rem 0rem;
 .navbar-container{
   height: 7vh;
 }
-.brand{
-  font-family: $font-main;
-  font-weight: 600;
-  color: $burnt-orange !important;
-  text-shadow: 0.3rem 0rem $dark-pink;
-  letter-spacing: 0.2rem;
-  font-size: 3rem !important;
-  padding: 0px !important;
+@media (min-width: 600px){
+  .brand{
+    font-family: $font-main;
+    font-weight: 600;
+    color: $burnt-orange !important;
+    text-shadow: 0.3rem 0rem $dark-pink !important;
+    letter-spacing: 0.2rem;
+    font-size: 3rem !important;
+    padding: 0px !important;
+  }
 }
+// .brand{
+//   font-family: $font-main;
+//   font-weight: 600;
+//   color: $burnt-orange !important;
+//   text-shadow: 0.3rem 0rem $dark-pink;
+//   letter-spacing: 0.2rem;
+//   font-size: 3rem;
+//   padding: 0px !important;
+// }
 
 // ---- Home Page ------
 .homepage-welcome{
@@ -206,6 +253,7 @@ $text-shaddow: 0.3rem 0rem;
 @media only screen and (max-width: 780px){
   .cards-wrapper{
     flex-direction: column !important;
+    align-items: center !important;
   }
   .card{
     height: 15rem !important;
