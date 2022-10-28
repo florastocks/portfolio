@@ -340,8 +340,11 @@ $text-shaddow: 0.3rem 0rem;
   box-shadow: 0.9rem 0.9rem $burnt-orange;
 }
 
-// ---- skills ----
+//! ---- skills ------------
 @media(max-width:780px){
+  .skills-wrapper{
+    width: 80vw !important;
+  }
   .skill-img{
     height: 3rem !important;
   }
