@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 const PageNavbar = () => {
   return (
     <Navbar className="navbar">
-      <Container className="navbar-conainer">
+      <Container className="navbar-container">
         <Navbar.Brand as={Link} to='/' className="brand">FS</Navbar.Brand>
         <Navbar.Collapse id='navbar-collapse'>
           <Nav.Link className="navbarLink" as={Link} to='/'>Home</Nav.Link>
